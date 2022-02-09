@@ -2,15 +2,17 @@
 #define _LAMPU_H_
 class Lampu {
     private:
-        int no_lamp;
+        int id;
         bool nyala_lampu;
+        static int no_lamp; 
     public:
         Lampu();
-        Lampu(int, bool);
-        Lampu(const Lampu&);
-        void set_nyala();
-        void set_mati();
-        bool get_info();
-        void PrintInfo() const;
+        Lampu(int id, bool nyala_lampu);
+        Lampu(const Lampu &);            
+        Lampu& operator=(const Lampu &);
+        ~Lampu();                        
+        void set_nyala(int nomor);
+        void set_mati(int nomor);
+        bool get_info()const;
 };
 #endif
