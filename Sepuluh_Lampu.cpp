@@ -26,9 +26,9 @@ void Sepuluh_Lampu::atur_nyala(int l){
 	int mult = l;
 	while(mult <= this->size){
 		if(this->array_Lampu[mult-1].get_info()){
-			this->array_Lampu[mult-1].set_mati();
+			this->array_Lampu[mult-1].set_mati(mult-1);
 		} else {
-			this->array_Lampu[mult-1].set_nyala();
+			this->array_Lampu[mult-1].set_nyala(mult-1);
 		}
 		mult += mult;
 	}
