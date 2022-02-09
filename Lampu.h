@@ -14,5 +14,6 @@ class Lampu {
         void set_nyala(int nomor);
         void set_mati(int nomor);
         bool get_info()const;
+        void print_info();
 };
 #endif

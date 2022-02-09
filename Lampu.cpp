@@ -1,4 +1,5 @@
 #include "Lampu.h"
+#include <iostream>
 using namespace std;
 
 int Lampu::no_lamp = 1;
@@ -50,4 +51,14 @@ void Lampu::set_mati(int nomor)
 bool Lampu::get_info() const
 {
     return this->nyala_lampu;
+}
+
+void Lampu::print_info()
+{
+    if (this->nyala_lampu){
+        cout << "Nyala";
+    }
+    else{
+        cout << "Mati";
+    }
 }

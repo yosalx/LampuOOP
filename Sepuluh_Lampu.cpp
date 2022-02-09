@@ -37,7 +37,7 @@ void Sepuluh_Lampu::atur_nyala(int l){
 //menampilkan status semua lampu dalam sebuah sepuluh_lampu
 void Sepuluh_Lampu::PrintAll(){
 	for(int i = 0; i < this->size; i++){
-		this->array_Lampu[i].PrintInfo();
+		this->array_Lampu[i].print_info();
 	}
 }
 
