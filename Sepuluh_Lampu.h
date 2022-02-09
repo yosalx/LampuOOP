@@ -6,14 +6,14 @@ class Sepuluh_Lampu {
     private:
         Lampu* array_Lampu;
         int size;
-        int Neff;
+        //int Neff;
     public:
         Sepuluh_Lampu();
-        Sepuluh_Lampu(int);
+        //Sepuluh_Lampu(int);
         Sepuluh_Lampu(const Sepuluh_Lampu&);
         ~Sepuluh_Lampu();
-        Sepuluh_Lampu& operator+(const Lampu&);
-        Sepuluh_Lampu& operator*=(const Sepuluh_Lampu&);
+        //Sepuluh_Lampu& operator+(const Lampu&);
+        void operator=(const Sepuluh_Lampu&);
         void atur_nyala(int);
         void PrintAll();
 };
