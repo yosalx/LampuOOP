@@ -56,9 +56,9 @@ bool Lampu::get_info() const
 void Lampu::print_info()
 {
     if (this->nyala_lampu){
-        cout << "Nyala";
+        cout << "O ";
     }
     else{
-        cout << "Mati";
+        cout << "X ";
     }
 }

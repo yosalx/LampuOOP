@@ -24,13 +24,14 @@ Sepuluh_Lampu::~Sepuluh_Lampu(){
 //menekan saklar lampu l
 void Sepuluh_Lampu::atur_nyala(int l){
 	int mult = l;
-	while(mult <= this->size){
-		if(this->array_Lampu[mult-1].get_info()){
-			this->array_Lampu[mult-1].set_mati(mult-1);
+	int i = 0;
+	while(i < this->size){
+		if(this->array_Lampu[i].get_info()){
+			this->array_Lampu[i].set_mati(mult);
 		} else {
-			this->array_Lampu[mult-1].set_nyala(mult-1);
+			this->array_Lampu[i].set_nyala(mult);
 		}
-		mult += mult;
+		i ++;
 	}
 }
 
